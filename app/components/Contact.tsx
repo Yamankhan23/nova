@@ -2,106 +2,99 @@ export default function Contact() {
     return (
         <section
             id="contact"
-            className="relative py-24 px-6 bg-black text-white overflow-hidden"
+            className="relative py-20 px-5 bg-black text-white overflow-hidden"
         >
-            {/* Soft Background Glows (same as Highlight) */}
-            <div className="absolute right-0 top-0 w-[500px] h-[500px] bg-pink-600/20 blur-[160px] -z-10" />
-            <div className="absolute left-0 bottom-0 w-[450px] h-[450px] bg-purple-600/20 blur-[160px] -z-10" />
+            {/* Soft Background Glows (same theme) */}
+            <div className="absolute right-0 top-0 w-[380px] h-[380px] bg-pink-600/20 blur-[130px] -z-10" />
+            <div className="absolute left-0 bottom-0 w-[350px] h-[350px] bg-purple-600/20 blur-[130px] -z-10" />
 
             {/* Heading */}
-            <div className="text-center max-w-lg mx-auto">
-                <h2 className="text-3xl md:text-4xl font-semibold gradient-text">
+            <div className="text-center max-w-sm mx-auto">
+                <h2 className="text-2xl font-semibold gradient-text">
                     Get in Touch
                 </h2>
-                <p className="text-gray-300 mt-3 text-sm">
-                    Have a question or want to explore NovaAI? Just drop a message.
+                <p className="text-gray-400 mt-2 text-xs">
+                    Have a question or want to explore NovaAI? Drop a message.
                 </p>
             </div>
 
-            {/* Minimal Premium Contact Card */}
+            {/* Mobile-first ultra minimal card */}
             <div
                 className="
-          mt-12 max-w-lg mx-auto 
-          bg-white/5 
-          backdrop-blur-lg 
-          border border-white/10 
-          rounded-xl 
-          p-8 
-          shadow-xl shadow-purple-600/10
-        "
+                    mt-10 max-w-sm mx-auto
+                    bg-black/40 
+                    border border-white/10 
+                    rounded-lg 
+                    p-6 
+                    backdrop-blur-md
+                    shadow-[0_0_25px_-10px_rgba(168,85,247,0.15)]
+                "
             >
-                <form className="space-y-5">
+                <form className="space-y-6">
 
                     {/* Name */}
                     <div className="space-y-1">
-                        <label className="text-gray-300 text-sm">Name</label>
+                        <label className="text-gray-300 text-xs">Name</label>
                         <input
                             type="text"
-                            className="
-                w-full px-4 py-2.5 
-                rounded-md 
-                bg-white/5 
-                border border-white/10 
-                text-white text-sm
-                focus:outline-none 
-                focus:border-purple-400/40 
-                transition
-              "
                             placeholder="John Doe"
+                            className="
+                                w-full bg-transparent
+                                border-b border-white/10
+                                pb-2 text-sm 
+                                text-white placeholder:text-gray-500
+                                focus:border-purple-400/40
+                                focus:outline-none transition
+                            "
                         />
                     </div>
 
                     {/* Email */}
                     <div className="space-y-1">
-                        <label className="text-gray-300 text-sm">Email</label>
+                        <label className="text-gray-300 text-xs">Email</label>
                         <input
                             type="email"
-                            className="
-                w-full px-4 py-2.5 
-                rounded-md 
-                bg-white/5 
-                border border-white/10 
-                text-white text-sm
-                focus:outline-none 
-                focus:border-purple-400/40 
-                transition
-              "
                             placeholder="john@example.com"
-                        />
-                    </div>
-
-                    {/* Message */}
-                    <div className="space-y-1">
-                        <label className="text-gray-300 text-sm">Message</label>
-                        <textarea
-                            rows={3}
                             className="
-                w-full px-4 py-2.5 
-                rounded-md 
-                bg-white/5 
-                border border-white/10 
-                text-white text-sm
-                resize-none
-                focus:outline-none 
-                focus:border-purple-400/40 
-                transition
-              "
-                            placeholder="Write your message..."
+                                w-full bg-transparent
+                                border-b border-white/10
+                                pb-2 text-sm 
+                                text-white placeholder:text-gray-500
+                                focus:border-purple-400/40
+                                focus:outline-none transition
+                            "
                         />
                     </div>
 
-                    {/* Submit Button */}
+                    {/* Message - mobile friendly (1-line height, super compact) */}
+                    <div className="space-y-1">
+                        <label className="text-gray-300 text-xs">Message</label>
+                        <textarea
+                            rows={1}
+                            placeholder="Write your message..."
+                            className="
+                                w-full bg-transparent
+                                border-b border-white/10
+                                pb-2 text-sm
+                                resize-none
+                                text-white placeholder:text-gray-500
+                                focus:border-purple-400/40
+                                focus:outline-none transition
+                            "
+                        />
+                    </div>
+
+                    {/* Button */}
                     <button
                         type="submit"
                         className="
-              w-full py-2.5 
-              rounded-full 
-              bg-gradient-to-r from-purple-600 to-pink-500 
-              text-white text-sm font-medium 
-              shadow-md shadow-purple-600/30
-              hover:scale-[1.03]
-              transition-transform
-            "
+                            w-full py-2.5 rounded-full text-sm
+                            bg-gradient-to-r from-purple-600 to-pink-500
+                            font-medium text-white
+                            shadow-md shadow-purple-600/20
+                            hover:scale-[1.03] active:scale-[0.98]
+                            transition-all
+                        "
                     >
                         Send Message
                     </button>
