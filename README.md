@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NovaAI — Intelligent Automation Suite Landing Page
 
-## Getting Started
+## Overview
 
-First, run the development server:
+NovaAI is a responsive, futuristic landing page for an intelligent automation platform. The design emphasizes premium gradients, soft glows, smooth animations, and modular components for easy reuse across pages.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Tech Stack
+
+* **Framework:** Next.js (React-based)
+* **Styling:** Tailwind CSS
+* **UI Prototyping:** Vercel v0 (initial scaffolding for first 3 components)
+* **Animations:** Custom CSS keyframes, Tailwind utilities
+
+---
+
+## Features
+
+* **Hero Section (`Hero.tsx`)**
+
+  * Gradient heading & subtext
+  * Call-to-action buttons
+  * Dynamic NovaAI-style background & floating particles
+  * Smooth glowing cursor
+
+* **Features Section (`Features.tsx`)**
+
+  * Highlights key product capabilities
+  * Animated glows & floating effects
+
+* **Highlights Section (`Highlight.tsx`)**
+
+  * Glowing panels with information
+  * Soft, floating animations
+
+* **Contact Section (`Contact.tsx`)**
+
+  * Mobile-first form with glowing inputs
+  * Responsive design
+
+* **Footer (`Footer.tsx`)**
+
+  * Brand-consistent navigation and links
+
+* **Navbar (`Navbar.tsx`)**
+
+  * Fixed top, responsive, blur & gradient effects
+
+---
+
+## Vercel v0 Usage
+
+The first three components (`Hero.tsx`, `Features.tsx`, `Highlight.tsx`) were **generated using Vercel v0** to speed up UI scaffolding.
+After that, all sections were **manually polished and enhanced** for:
+
+* Responsive design
+* NovaAI-themed gradients and animations
+* Modular, reusable components
+
+---
+
+## Installation & Running Locally
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Yamankhan23/nova
+   cd novaai-landing
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open in browser:
+
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## Project Structure
+
+```
+novaai-landing/
+├─ app/
+│  ├─ components/
+│  │  ├─ Contact.tsx
+│  │  ├─ CursorGlow.tsx
+│  │  ├─ Features.tsx
+│  │  ├─ Footer.tsx
+│  │  ├─ Hero.tsx
+│  │  └─ Highlight.tsx
+│  ├─ layout.tsx
+│  ├─ page.tsx
+│  └─ globals.css
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* **components/** → Reusable sections for the landing page
+* **layout.tsx & page.tsx** → Core layout + main page, import globals.css
+* **globals.css** → Tailwind base + animations + cursor glow styles
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## License
 
-## Learn More
+This project uses the **GNU Affero General Public License v3.0 (AGPL-3.0)**.
 
-To learn more about Next.js, take a look at the following resources:
+* Ensures open-source sharing if used in networked apps
+* Suitable for portfolio/demo purposes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Notes
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Fully responsive from mobile to desktop
+* Lightweight animations for low-end devices
+* Modular, reusable components
+* Vercel v0 was used to scaffold initial UI, later enhanced manually
